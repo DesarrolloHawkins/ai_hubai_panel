@@ -14,6 +14,7 @@
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
     <link rel="stylesheet" href="{{URL::asset('app-3ea8b221.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('assets/css/nav.css')}}">
     <!-- Scripts -->
     <script src="{{URL::asset('app-d4b42df8.js')}}"></script>
     {{-- @vite(['resources/sass/app.scss', 'resources/js/app.js']) --}}
@@ -53,7 +54,7 @@
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    <img class="img-fluid rounded" src="https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes.png" alt="">{{ Auth::user()->nombre }}
+                                    <img class="img-fluid rounded img-avatar-nav" src="{{URL::asset('assets/img/avatar.png')}}" alt="">{{ Auth::user()->nombre }}
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
