@@ -20,3 +20,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+Route::get('/conversaciones', [App\Http\Controllers\ConversacionesController::class, 'index'])->name('conversaciones');
+
+Route::get('/logs', [App\Http\Controllers\HomeController::class, 'index'])->name('logs');
