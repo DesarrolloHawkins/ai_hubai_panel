@@ -32,7 +32,7 @@ class TwilioController extends Controller
 {
     $response = new \Twilio\TwiML\VoiceResponse();
 
-    $response->say('Hola, esta es una llamada de prueba de Twilio.');
+    $response->say('  Hola,  en este momento estamos configurando nuestra inteligencia artificial para que pueda usted conversar con el,  esperemos que tengo una buena estancia.  Un Saludo .');
 
     return $response;
 }
