@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::post('/twilio/voice-response', [App\Http\Controllers\TwilioController::class, 'voiceResponse'])->name('twilio.voice-response');
 
 Auth::routes();
 
@@ -26,4 +27,3 @@ Route::get('/conversaciones', [App\Http\Controllers\ConversacionesController::cl
 
 Route::get('/logs', [App\Http\Controllers\HomeController::class, 'index'])->name('logs');
 Route::get('/make-call', [App\Http\Controllers\TwilioController::class, 'makeCall'])->name('makeCall');
-Route::post('/twilio/voice-response', [App\Http\Controllers\TwilioController::class, 'voiceResponse'])->name('twilio.voice-response');
