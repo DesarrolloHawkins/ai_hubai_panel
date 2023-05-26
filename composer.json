@@ -13,8 +13,7 @@
         "laravel/ui": "^4.2",
         "openai-php/client": "0.4.2",
         "openai-php/laravel": "^0.4.3",
-        "psr/http-message": "1.1.0",
-        "twilio/sdk": "^5.0"
+        "psr/http-message": "1.1.0"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
