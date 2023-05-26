@@ -25,3 +25,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/conversaciones', [App\Http\Controllers\ConversacionesController::class, 'index'])->name('conversaciones');
 
 Route::get('/logs', [App\Http\Controllers\HomeController::class, 'index'])->name('logs');
+Route::get('/make-call', [App\Http\Controllers\TwilioController::class, 'makeCall'])->name('makeCall');
+Route::post('/twilio/voice-response', [App\Http\Controllers\TwilioController::class, 'voiceResponse'])->name('twilio.voice-response');
